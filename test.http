@@ -1,0 +1,32 @@
+###
+GET http://localhost:8000/api/books
+
+
+###
+GET http://localhost:8000/api/book/3
+
+
+###
+POST http://localhost:8000/api/book
+Content-Type: application/json
+
+{
+  "title":"nova dva",
+  "author":"drugi autor",
+  "publisher": "drugi publish"
+}
+
+
+###
+PUT http://localhost:8000/api/book/2
+Content-Type: application/json
+
+{
+  "title":"druga dva",
+  "author":"drugi autor",
+  "publisher": "drugi publish"
+}
+
+
+###
+DELETE http://localhost:8000/api/book/3
